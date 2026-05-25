@@ -1,0 +1,9 @@
+{
+  "name": "In-Memory Cache",
+  "description": "Simple in-memory read-through cache for the MuxCore storage orchestrator",
+  "version": "1.0.0",
+  "kind": "storage",
+  "capabilities": ["cache.memory", "cache.local"],
+  "dependencies": [],
+  "homepage": "https://github.com/Muxcore-Media/cache-memory"
+}
