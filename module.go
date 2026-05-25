@@ -28,7 +28,7 @@ func (m *Module) Info() contracts.ModuleInfo {
 		ID:           "cache-memory",
 		Name:         "In-Memory Cache",
 		Version:      "1.0.0",
-		Kinds:        []contracts.ModuleKind{contracts.ModuleKindStorage},
+		Kinds:        []contracts.ModuleKind{contracts.ModuleKindProvider},
 		Description:  "Simple in-memory read-through cache for the storage orchestrator",
 		Author:       "MuxCore",
 		Capabilities: []string{"cache.memory", "cache.local"},
