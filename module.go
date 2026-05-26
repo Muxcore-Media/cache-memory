@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	contracts.Register(func(deps contracts.ModuleDeps) contracts.Module {
+	contracts.Register(func(deps contracts.Fabric) contracts.Module {
 		return NewModule()
 	})
 }
@@ -28,7 +28,7 @@ func (m *Module) Info() contracts.ModuleInfo {
 		ID:           "cache-memory",
 		Name:         "In-Memory Cache",
 		Version:      "1.0.0",
-		Kinds:        []contracts.ModuleKind{contracts.ModuleKindProvider},
+		Roles: []string{"provider"},
 		Description:  "Simple in-memory read-through cache for the storage orchestrator",
 		Author:       "MuxCore",
 		Capabilities: []string{"cache.memory", "cache.local"},
