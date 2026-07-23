@@ -106,7 +106,7 @@ Fix any failure before shipping. Do not push broken or incomplete work to the pu
 ## Directory Layout
 
 ```
-/home/enderk/claude/
+/home/ender/Projects/Muxcore/cache-memory/
 ├── core/                    # MuxCore distributed fabric (Go project)
 ├── core.wiki/               # Public-facing GitHub Wiki mirror
 ├── notes/                   # Private working notes (not committed to public)
@@ -185,7 +185,7 @@ make ci           # Full CI pipeline
 
 When you create a new module or repo at the workspace root, **just create the directory with a recognized marker file** — indexing is automatic. No config changes needed.
 
-**Discovery rules** — a directory at `/home/enderk/claude/` is indexed if it contains any of:
+**Discovery rules** — a directory at `/home/ender/Projects/Muxcore/cache-memory/` is indexed if it contains any of:
 - `go.mod` (Go module)
 - `muxcore.json` (MuxCore module)
 - `Cargo.toml` (Rust crate)
@@ -214,8 +214,8 @@ All existing module repos have `core.hooksPath` set to this shared directory aut
 **When creating a new module repo** (e.g. cloning `muxcore-module-starter`), you must configure hooks manually once:
 
 ```bash
-cd /home/enderk/claude/<your-module>
-git config core.hooksPath /home/enderk/claude/.githooks/modules
+cd /home/ender/Projects/Muxcore/cache-memory/<your-module>
+git config core.hooksPath /home/ender/Projects/Muxcore/cache-memory/.githooks/modules
 ```
 
 This ensures the vector index stays fresh whenever you commit or pull in that module.
